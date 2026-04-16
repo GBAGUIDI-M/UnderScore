@@ -35,7 +35,7 @@ export default function InsuranceUnderwriting() {
     setFinancials(null);
 
     try {
-      const res = await axios.post("http://161.35.74.143/predict", {
+      const res = await axios.post("https://cmdj.dpdns.org/predict", {
         home_team: homeTeam,
         away_team: awayTeam
       });
