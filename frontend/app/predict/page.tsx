@@ -30,7 +30,7 @@ export default function PredictorPage() {
     setResult(null);
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/predict", {
+      const res = await axios.post("https://underscoreaims.onrender.com/predict", {
         home_team: homeTeam,
         away_team: awayTeam
       });
