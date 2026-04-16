@@ -9,7 +9,7 @@ export default function InsightsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://161.35.74.143/explain").then(res => {
+    axios.get("https://cmdj.dpdns.org/explain").then(res => {
       if (res.data && !res.data.message) {
         // convert dict to array
         const sorted = Object.entries(res.data)
