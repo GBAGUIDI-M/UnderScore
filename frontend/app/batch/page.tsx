@@ -17,7 +17,7 @@ export default function BatchPage() {
     formData.append("file", file);
 
     try {
-      const res = await axios.post("http://161.35.74.143/batch", formData);
+      const res = await axios.post("https://cmdj.dpdns.org/batch", formData);
       setResults(res.data.results || []);
     } catch (err) {
       console.error(err);
