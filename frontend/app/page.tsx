@@ -11,7 +11,7 @@ export default function Dashboard() {
     setIsTraining(true);
     setTrainStatus(null);
     try {
-      const res = await axios.post("http://127.0.0.1:8000/train");
+      const res = await axios.post("https://underscoreaims.onrender.com/train");
       setTrainStatus(res.data.message || "Model trained successfully!");
     } catch (e: any) {
       setTrainStatus("Error training model. Make sure data is accessible.");
