@@ -9,7 +9,7 @@ export default function InsightsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/explain").then(res => {
+    axios.get("https://underscoreaims.onrender.com/explain").then(res => {
       if (res.data && !res.data.message) {
         // convert dict to array
         const sorted = Object.entries(res.data)
