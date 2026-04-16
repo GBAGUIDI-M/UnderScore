@@ -17,7 +17,7 @@ export default function BatchPage() {
     formData.append("file", file);
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/batch", formData);
+      const res = await axios.post("https://underscoreaims.onrender.com/batch", formData);
       setResults(res.data.results || []);
     } catch (err) {
       console.error(err);
